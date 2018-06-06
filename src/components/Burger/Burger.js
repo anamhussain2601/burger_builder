@@ -17,7 +17,7 @@ let transformedIngredients = Object.keys(props.ingredients)// gives an array of 
                           } , []);                    
 console.log(transformedIngredients)
 
-if(transformedIngredients ===0)
+if(transformedIngredients.length ===0)
 {
     transformedIngredients = <p>Please start adding ingredients!</p>
     console.log("hello");
@@ -27,7 +27,7 @@ if(transformedIngredients ===0)
 //and making the arrays of the items cheese or bacon .
 //look closer!!!
 
-    
+        
     
     return(
         <div className={classes.Burger}>
