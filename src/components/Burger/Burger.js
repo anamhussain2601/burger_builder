@@ -20,7 +20,6 @@ console.log(transformedIngredients)
 if(transformedIngredients.length ===0)
 {
     transformedIngredients = <p>Please start adding ingredients!</p>
-    console.log("hello");
     
 }
 //whats goin on in above code is simple creating an array from objects
