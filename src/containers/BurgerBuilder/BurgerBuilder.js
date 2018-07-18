@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import AuxNew from "../../hoc/AuxNew";
 import Burger from "../../components/Burger/Burger";
-// import buildControl from '../../components/Burger/BuildControls/BuildControl/BuildControl';
+//import buildControl from '../../components/Burger/BuildControls/BuildControl/BuildControl';
 import BuildControls from "../../components/Burger/BuildControls/BuildControls";
 import Modal from "../../components/UI/Modal/Modal";
 import OrderSummary from "../../components/Burger/OrderSummary/OrderSummary";
@@ -115,8 +115,7 @@ class BurgerBuilder extends Component {
       },
       deliveryMethod: "fastest"
     };
-    axios
-      .post("/order.json", order)
+    axios.post("/order.json", order)
       .then(response => {
         this.setState({ loading: false, purchasing: false });
       })
